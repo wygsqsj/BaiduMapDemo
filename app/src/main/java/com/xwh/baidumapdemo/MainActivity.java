@@ -74,11 +74,10 @@ public class MainActivity extends AppCompatActivity {
         if (child != null && (child instanceof ImageView || child instanceof ZoomControls)) {
             child.setVisibility(View.INVISIBLE);
         }
-        // 不显示地图上比例尺
+        // 显示地图上比例尺
         mMapView.showScaleControl(true);
-        // 不显示地图缩放控件（按钮控制栏）
-        mMapView.showZoomControls(false);
-
+        // 显示地图缩放控件（按钮控制栏）
+        mMapView.showZoomControls(true);
 
         //定位功能
         BaiduLocationUtil util = new BaiduLocationUtil();

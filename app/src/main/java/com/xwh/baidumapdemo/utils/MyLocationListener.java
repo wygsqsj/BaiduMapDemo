@@ -108,7 +108,7 @@ public class MyLocationListener implements BDLocationListener {
         mBaiduMap.addOverlay(options);
         MapStatus mMapStatus = new MapStatus.Builder()
                 .target(latlng)
-                .zoom(14)//设置比例尺
+                .zoom(14)//设置比例尺为1公里
                 .build();
         //定义MapStatusUpdate对象，以便描述地图状态将要发生的变化
         MapStatusUpdate mMapStatusUpdate = MapStatusUpdateFactory.newMapStatus(mMapStatus);
